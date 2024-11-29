@@ -565,9 +565,6 @@ font-weight: 700;
 
 /* <!-- start Projects section -->  */
 
-
-
-
 .Projects .all-items .item{
   display: flex;
   align-items: center;
@@ -692,7 +689,105 @@ font-weight: 700;
   }
 }
 
+/* <!-- end Projects section -->  */
 
-.hidden{
-  display: none;
+
+/* <!-- start footer section -->  */
+
+footer a{
+  color: white;
 }
+
+footer{
+  background-color: #311580;
+  color: white;
+}
+
+footer .container{
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+
+footer .container .item.img{
+  width: 30%;
+}
+
+footer .container .item.img p{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer .container .item.img img{
+  width: 110px;
+  height:110px;
+  margin-bottom: 20px;
+}
+
+footer .container .item h2{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+footer .container .item ul li{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer .container .item.Links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .container .item.Links ul i{
+  font-size: 22px;
+  margin: 8px;
+  
+}
+
+
+
+footer .container .item ul li {
+  padding: 6px 40px 6px 3px;
+  border-radius: 8px;
+}
+
+
+
+footer .container .item ul li:hover{
+  background-color: white;
+}
+
+
+footer .container .item ul li:hover a{
+  color: var(--primary-color);
+}
+
+
+
+@media(max-width:860px){
+  footer .container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .container .item ul li {
+    padding:6px 60px;
+    border-radius: 8px;
+  }
+
+  footer .container .item.img{
+    width: 100%;
+  }
+
+  footer .container .item{
+    width: 100%;
+  }
+}
+
+/* <!-- end footer section -->  */
