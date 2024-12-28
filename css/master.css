@@ -105,6 +105,125 @@ section{
 }
 
 
+/* start navigation section style */
+
+#navigation{
+  padding-top: 0px;
+  position: fixed;
+  right:30px ;
+  top: 30px;
+  z-index: 100;
+}
+
+#navigation .nav-icon{
+  background-color: var(--primary-color);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#navigation i{
+  color: white;
+  font-size: 40px;
+}
+
+#nav-content{
+  position: fixed;
+  right: -100% ;
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+  background-color: var(--secondary-black);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  transition: all 0.5s;
+}
+
+.show{
+  right: 0% !important;
+}
+
+#nav-content .close-btn{
+  position: relative;
+  top: -70px;
+  left: 10px;
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+#nav-content .close-btn:hover{
+  background-color: crimson;
+}
+
+#nav-content .wrapper{
+  width: 70%;
+  position: relative;
+  left: 30px;
+  top: -60px;
+}
+
+#nav-content .wrapper h2{
+  font-family: 'Montserrat';
+  margin-bottom: 3rem;
+  font-size: 60px;
+  position: relative;
+}
+
+#nav-content .wrapper h2::before{
+  content:  attr(data-text);
+  position: absolute;
+  top: -5px; 
+  left: 5px; 
+  z-index: -1; 
+  color: gray; 
+}
+
+#nav-content .wrapper ul li {
+  margin-bottom: 30px;
+}
+
+#nav-content .wrapper ul li a{
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+@media(max-width:710px){
+  #nav-content{
+    width: 70%;
+  }
+}
+
+@media(max-width:610px){
+  #nav-content{
+    width: 90%;
+  }
+
+  
+#nav-content .wrapper h2{
+  font-size: 40px;
+}
+
+  
+#nav-content .wrapper ul li a{
+  font-size: 20px;
+}
+
+}
+
+
+
+/* #nav-content */
+
+/* end navigation section style */
+
+
 /* start hero section */
 
 .hero .container{
@@ -603,7 +722,7 @@ font-weight: 700;
   width: 50%;
   box-shadow: 
   2px 2px 15px rgba(0, 0, 0, 0.504);
-  margin-left: -150px;
+  margin-left: -20%;
   background-color: #efebfa;
   border-radius: 15px;
   padding: 40px 20px;
@@ -613,7 +732,7 @@ font-weight: 700;
 
 
 .Projects .all-items :nth-child(2) .text{
-  margin-right: -150px;
+  margin-right: -20%;
   margin-left: 0;
 }
 
