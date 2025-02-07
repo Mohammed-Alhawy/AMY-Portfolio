@@ -17,7 +17,10 @@
 
 html{
   font-family: "Roboto Mono", sans-serif;
+  scroll-behavior: smooth;
 }
+
+
 
 body{
   background-color: var(--body-bg);
@@ -131,7 +134,7 @@ section{
   right: -100% ;
   width: 50%;
   height: 100%;
-  z-index: 100;
+  z-index: 1000;
   background-color: var(--secondary-black);
   color: white;
   display: flex;
@@ -244,10 +247,25 @@ section{
 }
 
 .hero .container .text .heading{
+  margin-top: 30px;
   font-size: 70px;
   font-family:"Montserrat" , sans-serif ;
   font-weight: 900;
+  overflow: hidden;
+  animation:botToTop 1s ease ;
 }
+
+@keyframes botToTop{
+  0%{
+    transform: translateY(40%);
+  }
+
+  100%{
+    transform: translateY(0%);
+  }
+
+}
+
 
 .hero .container .text .desc{
   margin: 40px 0 ;
